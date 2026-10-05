@@ -1,3 +1,8 @@
+"""Демонстрационная программа для работы с FASTA-файлами.
+
+Показывает работу классов Seq и FastaReader.
+"""
+
 from fasta_reader import FastaReader
 
 reader = FastaReader("example.fasta")
