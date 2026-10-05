@@ -1,0 +1,178 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Класс Seq &mdash; документация ^_^FASTA Sequence Reader^_^ 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9c7298da" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9ca2116e"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ^_^FASTA Sequence Reader^_^
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Класс Seq</a><ul>
+<li><a class="reference internal" href="#id1">Документация класса</a><ul>
+<li><a class="reference internal" href="#seq.Seq"><code class="docutils literal notranslate"><span class="pre">Seq</span></code></a><ul>
+<li><a class="reference internal" href="#seq.Seq.alphabet"><code class="docutils literal notranslate"><span class="pre">Seq.alphabet</span></code></a></li>
+<li><a class="reference internal" href="#seq.Seq.length"><code class="docutils literal notranslate"><span class="pre">Seq.length</span></code></a></li>
+<li><a class="reference internal" href="#seq.Seq.type"><code class="docutils literal notranslate"><span class="pre">Seq.type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">^_^FASTA Sequence Reader^_^</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Класс Seq</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/seq.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="seq">
+<h1>Класс Seq<a class="headerlink" href="#seq" title="Ссылка на этот заголовок"></a></h1>
+<p>Класс <code class="docutils literal notranslate"><span class="pre">Seq</span></code> предназначен для хранения биологической последовательности.</p>
+<p>Основные возможности:</p>
+<ul class="simple">
+<li><p>хранение заголовка последовательности;</p></li>
+<li><p>хранение самой последовательности;</p></li>
+<li><p>получение длины последовательности;</p></li>
+<li><p>получение уникального алфавита;</p></li>
+<li><p>определение типа последовательности.</p></li>
+</ul>
+<section id="id1">
+<h2>Документация класса<a class="headerlink" href="#id1" title="Ссылка на этот заголовок"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="seq.Seq">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">seq.</span></span><span class="sig-name descname"><span class="pre">Seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">header</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#seq.Seq" title="Ссылка на это определение"></a></dt>
+<dd><p>Класс для работы с биологическими последовательностями.</p>
+<p>Хранит загловок FASTA-записи и последовательностью
+Позволяет получить длину последовательности, уникальный алфавит и
+определить тип последовательности</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="seq.Seq.alphabet">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">alphabet</span></span><a class="headerlink" href="#seq.Seq.alphabet" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает уникальный алфавит последовательности.</p>
+<section id="returns">
+<h3>Returns<a class="headerlink" href="#returns" title="Ссылка на этот заголовок"></a></h3>
+<dl class="simple">
+<dt>set</dt><dd><p>Множество уникальных символов последовательности.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="seq.Seq.length">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">length</span></span><a class="headerlink" href="#seq.Seq.length" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает длину последовательности.</p>
+<section id="id2">
+<h3>Returns<a class="headerlink" href="#id2" title="Ссылка на этот заголовок"></a></h3>
+<dl class="simple">
+<dt>int</dt><dd><p>Количество символов в последовательности.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="seq.Seq.type">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#seq.Seq.type" title="Ссылка на это определение"></a></dt>
+<dd><p>Определяет тип биологической последовательности.</p>
+<section id="id3">
+<h3>Returns<a class="headerlink" href="#id3" title="Ссылка на этот заголовок"></a></h3>
+<dl class="simple">
+<dt>str</dt><dd><p>„nucleotide“ для нуклеотидной последовательности
+или „protein“ для белковой последовательности.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2026, Eva 3.2.33 :3. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

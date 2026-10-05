@@ -3,12 +3,13 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ru" data-content_root="./">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Алфавитный указатель &mdash; документация ^_^FASTA Sequence Reader^_^ 1.0</title>
+  <title>Основная программа &mdash; документация ^_^FASTA Sequence Reader^_^ 1.0</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=5f280735" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9c7298da" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -18,7 +19,7 @@
       <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="_static/translations.js?v=cd1d70c9"></script>
     <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Алфавитный указатель" href="#" />
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
     <link rel="search" title="Поиск" href="search.html" /> 
 </head>
 
@@ -42,7 +43,10 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
               <!-- Local TOC -->
-              <div class="local-toc"></div>
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Основная программа</a></li>
+</ul>
+</div>
         </div>
       </div>
     </nav>
@@ -57,8 +61,9 @@
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Алфавитный указатель</li>
+      <li class="breadcrumb-item active">Основная программа</li>
       <li class="wy-breadcrumbs-aside">
+            <a href="_sources/main.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
       </li>
   </ul>
   <hr/>
@@ -66,66 +71,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-
-<h1 id="index">Алфавитный указатель</h1>
-
-<div class="genindex-jumpbox">
- <a href="#A"><strong>A</strong></a>
- | <a href="#F"><strong>F</strong></a>
- | <a href="#L"><strong>L</strong></a>
- | <a href="#R"><strong>R</strong></a>
- | <a href="#S"><strong>S</strong></a>
- | <a href="#T"><strong>T</strong></a>
- 
-</div>
-<h2 id="A">A</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="index.html#seq.Seq.alphabet">alphabet (свойство seq.Seq)</a>, <a href="seq.html#seq.Seq.alphabet">[1]</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="F">F</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="fasta_reader.html#fasta_reader.FastaReader">FastaReader (класс в fasta_reader)</a>, <a href="index.html#fasta_reader.FastaReader">[1]</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="L">L</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="index.html#seq.Seq.length">length (свойство seq.Seq)</a>, <a href="seq.html#seq.Seq.length">[1]</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="R">R</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="fasta_reader.html#fasta_reader.FastaReader.read">read() (метод fasta_reader.FastaReader)</a>, <a href="index.html#fasta_reader.FastaReader.read">[1]</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="S">S</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="index.html#seq.Seq">Seq (класс в seq)</a>, <a href="seq.html#seq.Seq">[1]</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="T">T</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="index.html#seq.Seq.type">type (свойство seq.Seq)</a>, <a href="seq.html#seq.Seq.type">[1]</a>
-</li>
-  </ul></td>
-</tr></table>
-
+  <section id="id1">
+<h1>Основная программа<a class="headerlink" href="#id1" title="Ссылка на этот заголовок"></a></h1>
+<p>Модуль <code class="docutils literal notranslate"><span class="pre">main</span></code> демонстрирует работу программы.</p>
+<p>В программе выполняются:</p>
+<ul class="simple">
+<li><p>чтение FASTA-файла;</p></li>
+<li><p>получение последовательностей;</p></li>
+<li><p>вывод заголовка;</p></li>
+<li><p>вывод последовательности;</p></li>
+<li><p>вывод её длины;</p></li>
+<li><p>вывод уникального алфавита;</p></li>
+<li><p>определение типа последовательности.</p></li>
+</ul>
+</section>
 
 
            </div>
