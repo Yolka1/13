@@ -12,12 +12,15 @@ class FastaReader:
             for line in file:
                 line = line.strip()
 
-                if line.startwith(">"):
+                if line.startswith(">"):
                     if header is not None:
                         if not sequence:
                             raise ValueError ("После заголовка отсутствует последовательность")
 
                         yield Seq (header, "".join(sequence))
+
+                    header = line [1:]
+                    sequence = []
 
                 else:
                     if header is None: 
